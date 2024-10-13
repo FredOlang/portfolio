@@ -1,0 +1,222 @@
+<<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Optionnel) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS Personnalisé -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mon Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#apropos">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projets">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#competences">Compétences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Accueil -->
+    <section id="accueil" class="vh-100 d-flex align-items-center bg-light">
+      <div class="container text-center">
+        <h1 class="display-4">Bienvenue sur mon Portfolio</h1>
+        <p class="lead">Développeur Web et passionné par le DevOps</p>
+        <a href="#projets" class="btn btn-primary btn-lg">Voir mes projets</a>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="apropos" class="py-5">
+      <div class="container">
+        <h4 class="text-center mb-4">À propos de moi</h4>
+        <div class="row align-items-center">
+          <div class="col-md-4" data-aos="fade-right">
+            <img src="images/maphoto.png" alt="Ma photo" class="img-fluid rounded-circle shadow custom-img">
+          </div>
+          <div class="col-md-8" data-aos="fade-left">
+		  
+            <p>Bonjour, je m'appelle <strong>Fred</strong>, étudiant en développement web. Depuis le début de mon parcours, j'ai appris les bases du <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> et plus récemment <strong>React</strong>. 
+				Actuellement, j'apprends également <strong>Python</strong> pour explorer le back-end et l'automatisation.</p>
+             <p>Je continue à développer mes compétences au quotidien, et je suis toujours à la recherche de nouveaux défis pour progresser rapidement. Mon objectif est de combiner mes compétences en développement web avec des pratiques DevOps pour devenir un développeur polyvalent et efficace.</p>
+			
+					
+					
+                    <h4 class="text-center mb-4">Actuellement en apprentissage :</h4>
+                    <ul>
+                        <li><strong>React</strong> : Développement d'interfaces réactives.</li>
+                        <li><strong>Python</strong> : Apprentissage pour le back-end et l'automatisation.</li>
+                        <li><strong>Bootstrap</strong> : Création de designs responsives, comme ce portfolio.</li>
+                    </ul>
+
+                    <h4 class="text-center mb-4">Pourquoi DevOps ?</h4>
+                    <p>
+                        Le DevOps représente pour moi un domaine à la fois passionnant et essentiel dans l'industrie du développement logiciel. Son approche de collaboration entre les équipes de développement et d'infrastructure permet de créer des solutions plus robustes et efficaces. Je souhaite évoluer dans un environnement où je peux automatiser les processus, améliorer les workflows, et contribuer à la mise en production rapide et fiable d'applications.
+                    </p>
+			
+			
+            <a href="#contact" class="btn btn-outline-primary mt-3">Contactez-moi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Mes Projets</h2>
+        <div class="row">
+          <!-- Projet 1 -->
+          <div class="col-md-4 mb-4" data-aos="zoom-in">
+            <div class="card h-100 shadow-sm">
+              <img src="images/projet1.jpg" class="card-img-top" alt="Projet 1">
+              <div class="card-body">
+                <h5 class="card-title">Entre les notes</h5>
+                <p class="card-text">Un blog construit avec Flask, déployé sur Heroku avec une pipeline CI/CD.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/ton-username/projet1" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> Voir le code</a>
+                <a href="https://demo.projet1.com" class="btn btn-secondary" target="_blank"><i class="fas fa-external-link-alt"></i> Voir la démo</a>
+              </div>
+            </div>
+          </div>
+          <!-- Projet 2 -->
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card h-100 shadow-sm">
+              <img src="images/projet2.png" class="card-img-top" alt="Projet 2">
+              <div class="card-body">
+                <h5 class="card-title">Gestionnaire de Tâches - Projet Python</h5>
+                <p class="card-text">Ce projet consiste en la création d'un gestionnaire de tâches interactif utilisant Python, avec une interface graphique développée grâce à Tkinter. L'application permet aux utilisateurs d'ajouter, supprimer, et marquer des tâches comme terminées, tout en les classifiant par priorité (Haute, Moyenne, Basse).
+				Le projet comprend également une série de tests automatisés pour garantir la fiabilité et la fonctionnalité du gestionnaire de tâches, utilisant la bibliothèque unittest.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/fredolang/gestionnaire-taches" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> Voir le code</a>
+                <a href="https://ton-portfolio.netlify.app" class="btn btn-secondary" target="_blank"><i class="fas fa-external-link-alt"></i> Voir la démo</a>
+              </div>
+            </div>
+          </div>
+          <!-- Projet 3 -->
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card h-100 shadow-sm">
+              <img src="images/projet3.jpg" class="card-img-top" alt="Projet 3">
+              <div class="card-body">
+                <h5 class="card-title">Application DevOps avec Docker</h5>
+                <p class="card-text">Une application conteneurisée avec Docker, orchestrée avec Kubernetes.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/ton-username/projet3" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> Voir le code</a>
+                <a href="https://demo.projet3.com" class="btn btn-secondary" target="_blank"><i class="fas fa-external-link-alt"></i> Voir la démo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Mes Compétences</h2>
+        <div class="row">
+          <div class="col-md-6 mb-3" data-aos="fade-right">
+            <h5>HTML & CSS</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" 
+                   aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3" data-aos="fade-left">
+            <h5>JavaScript</h5>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="80" 
+                   aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3" data-aos="fade-right">
+            <h5>Python</h5>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="70" 
+                   aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3" data-aos="fade-left">
+            <h5>DevOps</h5>
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60" 
+                   aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Contactez-moi</h2>
+        <form data-aos="fade-up">
+          <div class="mb-3">
+            <label for="nom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="nom" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Mon Portfolio | Développé avec 💻 par Fred | Tous droits réservés</p>
+        <div>
+            <a href="#" class="text-white mx-3"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-white mx-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mx-3"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
