@@ -1,19 +1,22 @@
-/* styles.css */
-
-/* Importation des polices Google */
+/* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-p.apropos {
-    text-align: justify;
+/* Conteneur principal */
+.container {
+    max-width: 1140px;
+    margin: 0 auto; /* Centrer le contenu */
+    padding: 0 15px; /* Espace sur les côtés */
 }
 
 /* Personnaliser la section d'accueil */
 #accueil {
     background-image: url('../images/accueil-bg.jpg');
     color: white;
-    position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,7 +24,8 @@ p.apropos {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    position: relative;
+    text-align: center;
 }
 
 #accueil::before {
@@ -32,45 +36,78 @@ p.apropos {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Overlay sombre */
-}
-
-#accueil .container {
-    position: relative;
     z-index: 1;
 }
 
-.custom-img {
+#accueil .container {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section À propos */
+#apropos {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#apropos img.custom-img {
     width: 300px;
     height: auto;
-    margin-bottom: 20px;
+    margin: 20px auto; /* Centrer l'image */
+    display: block;
 }
 
-/* Styles responsive */
-@media only screen and (max-width: 768px) {
-    .custom-img {
-        width: 120px;
-    }
+#apropos p {
+    text-align: justify;
 }
 
-@media only screen and (max-width: 480px) {
-    .custom-img {
-        width: 100px;
-    }
+/* Projets */
+#projets {
+    background-color: #f8f9fa;
+    padding: 60px 0;
 }
 
-/* Personnaliser les cartes de projet */
+.card {
+    text-align: center;
+}
+
 .card-img-top {
+    width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
+/* Compétences */
+#competences {
+    padding: 60px 0;
 }
 
-.card-footer a {
-    margin-right: 0.5rem;
+.progress {
+    height: 1.5rem;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    line-height: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #ddd;
 }
 
 /* Bouton Retour en Haut */
@@ -84,56 +121,18 @@ p.apropos {
     border-radius: 50%;
     padding: 10px 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.3s ease; /* Transition pour l'apparition/disparition */
-}
-
-#btnRetourHaut.show {
-    display: block;
-    opacity: 1;
-}
-
-/* Ajustements des sections */
-section {
-    padding-top: 80px;
-}
-
-/* Navbar */
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-/* Footer */
-footer a {
-    color: white;
-}
-
-footer a:hover {
-    color: #ddd;
-}
-
-#back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
+    transition: opacity 0.3s ease;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 50%;
-    padding: 10px;
     font-size: 18px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    z-index: 999;
 }
 
-#back-to-top:hover {
+#btnRetourHaut:hover {
     background-color: #0056b3;
 }
 
-
-/* Responsive Ajustements */
+/* Media Queries */
 @media (max-width: 768px) {
     #accueil h1 {
         font-size: 2.5rem;
@@ -141,5 +140,31 @@ footer a:hover {
 
     #accueil p.lead {
         font-size: 1.2rem;
+    }
+
+    #apropos img.custom-img {
+        width: 150px;
+    }
+
+    .progress {
+        height: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #accueil h1 {
+        font-size: 2rem;
+    }
+
+    #accueil p.lead {
+        font-size: 1rem;
+    }
+
+    #apropos img.custom-img {
+        width: 100px;
+    }
+
+    .progress {
+        height: 1rem;
     }
 }
