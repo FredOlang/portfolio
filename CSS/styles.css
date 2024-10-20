@@ -60,9 +60,7 @@ body {
     display: block;
 }
 
-#apropos p {
-    text-align: justify;
-}
+
 
 /* Projets */
 #projets {
@@ -84,6 +82,59 @@ body {
 #competences {
     padding: 60px 0;
 }
+
+/* Style pour les icônes des compétences de développement web */
+.dev-web-icon {
+    color: #007bff; /* Bleu pour Dev Web */
+    margin-right: 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.dev-web-icon:hover {
+    transform: scale(1.2);
+    color: #0056b3;
+}
+
+/* Style pour les icônes des outils DevOps */
+.devops-icon {
+    color: #28a745; /* Vert pour DevOps */
+    margin-right: 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.devops-icon:hover {
+    transform: scale(1.2);
+    color: #218838;
+}
+
+/* Style pour les icônes des soft skills */
+.soft-skill-icon {
+    color: #ff8800; /* Orange pour Soft Skills */
+    margin-right: 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.soft-skill-icon:hover {
+    transform: scale(1.2);
+    color: #e67e22;
+}
+
+/* Style général des listes de compétences */
+#competences ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#competences ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+
 
 .progress {
     height: 1.5rem;
